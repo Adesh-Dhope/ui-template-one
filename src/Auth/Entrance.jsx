@@ -14,7 +14,7 @@ navigate('/register')
     }
   return (
     <div className="bg-white py-12 px-4 sm:px-6 lg:px-16">
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+<div className="flex flex-col lg:flex-row items-center justify-between gap-10">
         {/* Text Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <p className="text-sm text-gray-500 uppercase tracking-wide">
