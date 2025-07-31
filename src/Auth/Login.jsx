@@ -2,30 +2,37 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const BackToRegister = ()=>{
-        navigate('/register')
-    }
+  const BackToRegister = () => {
+    navigate("/register");
+  };
+
+  const ForgetPassword = () =>{
+    navigate('/forget-password')
+  }
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row items-center justify-center bg-white px-4 sm:px-6 lg:px-16 py-12 gap-12">
+    <div className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-around bg-white px-4 sm:px-6 lg:px-16 py-12 gap-12">
       {/* Left Image Section */}
       <div className="w-full lg:w-1/2">
         <img
           src="https://img.freepik.com/free-vector/login-concept-illustration_114360-757.jpg"
           alt="Login Illustration"
-          className="w-full max-w-md mx-auto"
+          className="w-full h-auto object-contain"
         />
       </div>
 
       {/* Right Form Section */}
-      <div className="w-full lg:w-1/2 max-w-md bg-white shadow-lg rounded-xl p-8">
+      <div className="w-full lg:w-1/2 bg-white shadow-lg rounded-xl p-8">
         <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
           Welcome Back
         </h2>
         <form className="space-y-6">
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700"
+            >
               Email Address
             </label>
             <input
@@ -38,7 +45,10 @@ const Login = () => {
           </div>
 
           <div>
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-gray-700"
+            >
               Password
             </label>
             <input
@@ -55,7 +65,9 @@ const Login = () => {
               <input type="checkbox" className="mr-2" />
               Remember me
             </label>
-            <a href="#" className="text-sm text-orange-500 hover:underline">
+            <a
+             onClick={ForgetPassword}
+             className="text-sm text-orange-500 hover:underline cursor-pointer">
               Forgot password?
             </a>
           </div>
@@ -68,10 +80,11 @@ const Login = () => {
           </button>
 
           <p
-          onClick={BackToRegister}
-          className="text-center text-sm text-gray-600 mt-4">
+            onClick={BackToRegister}
+            className="text-center text-sm text-gray-600 mt-4"
+          >
             Don't have an account?{" "}
-            <a href="#" className="text-orange-500 hover:underline">
+            <a className="text-orange-500 hover:underline cursor-pointer">
               Sign Up
             </a>
           </p>

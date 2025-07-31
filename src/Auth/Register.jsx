@@ -9,18 +9,18 @@ const Register = () => {
         navigate('/login')
     }
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row items-center justify-center bg-white px-4 sm:px-6 lg:px-16 py-12 gap-12">
+<div className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between bg-white px-4 sm:px-6 lg:px-16 py-12 gap-12">
       {/* Left Illustration */}
       <div className="w-full lg:w-1/2">
         <img
           src="https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7885.jpg"
           alt="Register Illustration"
-          className="w-full max-w-md mx-auto"
+  className="w-full h-auto object-contain"
         />
       </div>
 
       {/* Right Form Section */}
-      <div className="w-full lg:w-1/2 max-w-md bg-white shadow-lg rounded-xl p-8">
+<div className="w-full lg:w-1/2 bg-white shadow-lg rounded-xl p-8">
         <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
           Create an Account
         </h2>
@@ -80,7 +80,7 @@ const Register = () => {
           onClick={BackToLogin}
           className="text-center text-sm text-gray-600 mt-4">
             Already have an account?{" "}
-            <a href="#" className="text-orange-500 hover:underline">
+            <a className="text-orange-500 hover:underline">
               Login
             </a>
           </p>
