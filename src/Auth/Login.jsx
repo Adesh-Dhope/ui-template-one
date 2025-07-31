@@ -11,6 +11,10 @@ const Login = () => {
   const ForgetPassword = () =>{
     navigate('/forget-password')
   }
+
+  const Login = ()=>{
+        navigate('/add-student')
+  }
   return (
     <div className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-around bg-white px-4 sm:px-6 lg:px-16 py-12 gap-12">
       {/* Left Image Section */}
@@ -75,7 +79,8 @@ const Login = () => {
           <button
             type="submit"
             className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-md shadow hover:opacity-90 transition"
-          >
+         onClick={Login}
+         >
             Login
           </button>
 

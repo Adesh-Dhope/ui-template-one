@@ -80,7 +80,7 @@ const Register = () => {
           onClick={BackToLogin}
           className="text-center text-sm text-gray-600 mt-4">
             Already have an account?{" "}
-            <a className="text-orange-500 hover:underline">
+            <a className="text-orange-500 hover:underline cursor-pointer">
               Login
             </a>
           </p>

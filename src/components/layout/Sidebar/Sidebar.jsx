@@ -12,10 +12,9 @@ import {
 import { Link } from "react-router-dom";
 
 const menuItems = [
-      { name: "Entrance", icon: <FolderOpen size={20} />, link: "/entrance" }, 
-  { name: "Login", icon: <UserPlus size={20} />, link: "/login" },
-    { name: "Register", icon: <FolderOpen size={20} />, link: "/register" }, 
-    { name: "Add Subject", icon: <FolderOpen size={20} />, link: "/add-subject" }, 
+  { name: "Add Teacher", icon: <UserPlus size={20} />, link: "/add-teacher" },
+  { name: "Add Student", icon: <FolderOpen size={20} />, link: "/add-student" },
+  { name: "Add Subject", icon: <FolderOpen size={20} />, link: "/add-subject" },
   {
     name: "Settings",
     icon: <UserCog size={20} />,
@@ -44,7 +43,7 @@ const Sidebar = () => {
         className={`fixed md:relative top-0 left-0 h-full w-64 bg-white shadow-lg z-50 transition-transform duration-300 ease-in-out 
           ${isOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}
       >
-        <div className="p-4 bg-blue-600 text-white font-bold text-base md:text-xl">
+        <div className="p-4 bg-orange-500 text-white font-bold text-base md:text-xl">
           Student Management
         </div>
 
