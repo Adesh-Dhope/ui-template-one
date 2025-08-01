@@ -31,7 +31,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className="md:hidden flex justify-between items-center  bg-orange-500  p-2">
+      <div className=" md:hidden flex justify-between items-center  bg-orange-500  p-2">
         <h1 className="!text-lg font-bold text-white">Student Management</h1>
         <button 
         className="bg-transparent"
