@@ -31,9 +31,11 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className="md:hidden flex justify-between items-center bg-blue-600 text-white p-4">
-        <h1 className="text-xl font-bold">Student Management</h1>
-        <button onClick={() => setIsOpen(!isOpen)}>
+      <div className="md:hidden flex justify-between items-center  bg-orange-500  p-2">
+        <h1 className="!text-lg font-bold text-white">Student Management</h1>
+        <button 
+        className="bg-transparent"
+        onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
