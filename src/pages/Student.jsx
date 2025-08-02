@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch } from 'react-redux';
+import { setPageTitle } from '../redux/slices/pageTitleSlice';
+import Header from '../components/layout/Header/Header';
 
 const Student = () => {
+        const dispatch = useDispatch()
+    useEffect(() => {
+    dispatch(setPageTitle("Add Student"));
+  }, [dispatch]);
+
   return (
     <div className='w-full'>
-      <h3 className='bg-orange-500'>Student</h3>
+<Header />
     </div>
   )
 }

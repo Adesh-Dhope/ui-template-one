@@ -8,13 +8,14 @@ import {
   ChevronUp,
   ChevronDown,
   UserCog,
+  BookMarked
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const menuItems = [
   { name: "Add Teacher", icon: <UserPlus size={20} />, link: "/add-teacher" },
   { name: "Add Student", icon: <FolderOpen size={20} />, link: "/add-student" },
-  { name: "Add Subject", icon: <FolderOpen size={20} />, link: "/add-subject" },
+  { name: "Add Subject", icon: <BookMarked  size={20} />, link: "/add-subject" },
   {
     name: "Settings",
     icon: <UserCog size={20} />,
@@ -36,7 +37,7 @@ const Sidebar = () => {
         <button 
         className="bg-transparent"
         onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? <X size={28} className=" text-white" /> : <Menu size={28} className=" text-white"/>}
         </button>
       </div>
 
