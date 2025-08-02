@@ -78,7 +78,7 @@ const Login = () => {
 
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-md shadow hover:opacity-90 transition"
+            className="w-full bg-gradient-to-r cursor-pointer from-orange-500 to-red-500  text-white py-3 rounded-md shadow hover:opacity-90 transition"
          onClick={Login}
          >
             Login

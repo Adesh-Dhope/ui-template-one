@@ -8,6 +8,10 @@ const Register = () => {
     const BackToLogin = ()=>{
         navigate('/login')
     }
+
+    const Register = ()=>{
+           navigate('/add-student')
+    }
   return (
 <div className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between bg-white px-4 sm:px-6 lg:px-16 py-12 gap-12">
       {/* Left Illustration */}
@@ -70,7 +74,8 @@ const Register = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-md shadow hover:opacity-90 transition"
+            className="w-full cursor-pointer bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-md shadow hover:opacity-90 transition"
+          onClick={Register}
           >
             Register
           </button>

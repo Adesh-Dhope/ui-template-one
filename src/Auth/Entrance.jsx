@@ -30,12 +30,12 @@ navigate('/register')
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <button
             onClick={Register}
-            className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-full shadow hover:opacity-90 transition">
+            className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600  hover:to-red-600 text-white px-6 py-3 rounded-full shadow hover:opacity-90 transition cursor-pointer">
               Get Started
             </button>
             <button
             onClick={Login}
-            className="border border-gray-400 text-gray-800 px-6 py-3 rounded-full hover:from-orange-500 transition">
+            className="border border-gray-400 text-gray-800 px-6 py-3 rounded-full bg-gradient-to-r hover:from-orange-500 hover:to-red-500 transition cursor-pointer hover:text-white">
               Login
             </button>
           </div>
